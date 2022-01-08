@@ -7,8 +7,8 @@
 1. Intoduction
 #### 01 - Reddit Sentiment Trading Bot 1
 1.  [x] - Setting up the Evniroment
-2.  [] - Connection to Reddit 
-3.  [] - Get Trending Post & Comments from Reddit
+2.  [x] - Connection to Reddit 
+3.  [x] - Get Trending Post & Comments from Reddit
 4.  [] - Stream Comments & Perform Sentiment Analysis
 5.  [] - Trading Stratergy
 6.  [] - Get some Bitcoins
@@ -30,5 +30,10 @@
 2. Connection to Reddit using (PRAW)[https://praw.readthedocs.io/en/stable/]
     - pip install praw
     - https://www.reddit.com/prefs/apps
+3. Test things are working
+    - `python reddittradingbot1.py`
+4. Get some data from the front page
+    - [https://praw.readthedocs.io/en/stable/code_overview/reddit/front.html]
+    - explore the PRAWS model [https://praw.readthedocs.io/en/stable/code_overview/praw_models.html]
 
 --- 

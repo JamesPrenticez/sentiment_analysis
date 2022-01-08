@@ -9,4 +9,12 @@ reddit = praw.Reddit(
     username=config.REDDIT_USER,
 )
 
-print(reddit) 
+# print(reddit) 
+
+# for comment in reddit.subreddit("redditdev").comments(limit=25):
+#     print(comment.author)
+#     print(comment.body)
+
+for submission in reddit.subreddit("wallstreetbets").hot(limit=25):
+    print(submission.title)
+    
