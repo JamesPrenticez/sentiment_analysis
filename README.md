@@ -9,8 +9,8 @@
 1.  [x] - Setting up the Evniroment
 2.  [x] - Connection to Reddit 
 3.  [x] - Get Trending Post & Comments from Reddit
-4.  [] - Stream Comments & Perform Sentiment Analysis
-5.  [] - Trading Stratergy
+4.  [x] - Stream Comments & Perform Sentiment Analysis
+5.  [x] - Trading Stratergy
 6.  [] - Get some Bitcoins
 7.  [] - Connection to Binance in Python
 8.  [] - Setting up Order Funtions
@@ -18,7 +18,11 @@
 10. [] - Selling Stock Functions
 
 #### 02 - Reddit Sentiment Trading Bot 2
-
+1. [] - Intro to the 2nd trading stratergy
+2. [] - Setting up the project
+3. [] - Trading Stratergy 2 - Part 1
+4. [] - Trading Stratergy 2 - Part 2
+5. [] - Trading Straterfy 2 - Part 3
 ---
 
 ### What we've done
@@ -35,5 +39,9 @@
 4. Get some data from the front page
     - [https://praw.readthedocs.io/en/stable/code_overview/reddit/front.html]
     - explore the PRAWS model [https://praw.readthedocs.io/en/stable/code_overview/praw_models.html]
+    - stream comments from a subreddit ctr + f =stream [https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html] 
+5. Preform sentiment analysis with (TestBlob)[https://textblob.readthedocs.io/en/dev/] NOTE: this is not the best package we are just learning
+    -  pip install textblob
+    -  polarity between -1-0-1 aka -1  is negative 0 is netural and positive is + 1
 
 --- 
