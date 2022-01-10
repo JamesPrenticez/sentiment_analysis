@@ -11,8 +11,8 @@
 3.  [x] - Get Trending Post & Comments from Reddit
 4.  [x] - Stream Comments & Perform Sentiment Analysis
 5.  [x] - Trading Stratergy
-6.  [] - Get some Bitcoins
-7.  [] - Connection to Binance in Python
+6.  [x] - Get some Bitcoins $25 NZD got us 0.00038435 BTC
+7.  [x] - Connection to Binance in Python
 8.  [] - Setting up Order Funtions
 9.  [] - Buying Stock Functions
 10. [] - Selling Stock Functions

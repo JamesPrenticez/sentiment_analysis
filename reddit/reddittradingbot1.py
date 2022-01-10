@@ -25,13 +25,15 @@ reddit = praw.Reddit(
 # nio (is a compeditor for tesla, potentially if the sentiment is poor for neo we could infer that thats a good sign to buy tsla)
 
 sentimentList = []
-neededSentiment = []
+neededSentiments = 5
 
 def Average(sentimentList):
-    if len(sentimentList) == 0
+    if len(sentimentList) == 0:
         return len(sentimentList)
     else:
-        return sum(sentimentList[-neededSentiment:] / neededSentiment)
+        return sum(sentimentList[-neededSentiments:]) / neededSentiments
+
+
 
 for comment in reddit.subreddit("bitcoinmarkets").stream.comments():
     print(comment.body)
@@ -43,9 +45,13 @@ for comment in reddit.subreddit("bitcoinmarkets").stream.comments():
     print("********** Sentiment is: " + str(sent.polarity) + "***********")
     
     if sent.polarity != 0.0:
-        sentimentList.append(sent)
+        sentimentList.append(sent.polarity)
 
-        if round(Average(sentimentList) > 0.5 and len(sentimentList > 300)):
+        print(len(sentimentList))
+        print(Average(sentimentList))
+
+        if len(sentimentList) > neededSentiments and Average(sentimentList) > 0:
             print("BUY")
-        elif round(Average(sentimentList) < 0.5) and len(sentimentList) > neededSentiments
+        elif len(sentimentList) > neededSentiments and Average(sentimentList) < 0:
             print("SELL")
+ 
